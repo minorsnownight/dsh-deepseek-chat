@@ -1,0 +1,51 @@
+{
+  "name": "dsh-deepseek-chat",
+  "version": "0.1.0",
+  "description": "DSH plugin: chat.deepseek.com in the left sidebar, with a login that survives restarts",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/plugin.test.js"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "chat",
+    "plugin",
+    "sidebar"
+  ],
+  "author": "huangrx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minorsnownight/dsh-deepseek-chat.git"
+  },
+  "homepage": "https://github.com/minorsnownight/dsh-deepseek-chat#readme",
+  "bugs": {
+    "url": "https://github.com/minorsnownight/dsh-deepseek-chat/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

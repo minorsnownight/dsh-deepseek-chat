@@ -1,0 +1,6 @@
+# Bundle patch: mounting this package by name (npm/file install) inserts the
+# Host row below. For a local checkout, mount the absolute path to
+# lib/index.js from the profile's own cordis.patch.yml instead.
+- insert:
+    - id: deepseek-chat
+      name: 'dsh-deepseek-chat'
