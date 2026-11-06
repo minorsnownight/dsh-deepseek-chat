@@ -137,7 +137,6 @@ lib/jar.js            落盘 Cookie jar
 lib/client.js         Client 半边：左侧导航项 + main 全宽页面（手写 module-loader bundle，无构建步骤）
 cordis.patch.yml      作为 bundle 安装时挂载 Host 行
 test/plugin.test.js   单元测试
-.github/workflows/    CI（Node 20 / 22 跑测试）
 ```
 
 调试：
